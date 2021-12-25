@@ -1,2 +1,26 @@
 @import '../Helpers/mixins';
 @import '../Helpers/variables';
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    &__time {
+        border: 1px solid black;
+        padding: 5px 5px 5px 5px;
+        border-radius: $radius;
+        font-size: $bigger-font-size;
+    }
+
+    &__button {
+        background-color: $dark-color;
+        color: $dark-text-color;
+        font-size: $medium-font-size;
+        border: none;
+        padding: 10px;
+        border-radius: $radius;
+    }
+}

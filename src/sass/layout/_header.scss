@@ -1,2 +1,14 @@
 @import '../Helpers/mixins';
 @import '../Helpers/variables';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    &__title {
+        font-size: $mega-font-size;
+    }
+}
