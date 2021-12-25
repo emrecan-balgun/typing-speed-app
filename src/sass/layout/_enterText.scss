@@ -5,6 +5,8 @@
     @include flexbox();
 
     &__input {
+        font-family: 'Poppins', sans-serif;
+        font-size: $medium-font-size;
         margin-top: 25px;
         width: 60%;
         border: none;

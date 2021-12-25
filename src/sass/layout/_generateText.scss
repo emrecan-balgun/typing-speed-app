@@ -2,8 +2,6 @@
 @import '../Helpers/variables';
 
 .generateText {
-   
-
     &__input {
         font-family: 'Poppins', sans-serif;
         font-size: $medium-font-size;
@@ -12,5 +10,6 @@
         border-radius: $radius;
         padding: 10px;
         border: none;
+        background-color: $white;
     }
 }
