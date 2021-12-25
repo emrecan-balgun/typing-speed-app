@@ -1,2 +1,16 @@
 @import '../Helpers/mixins';
 @import '../Helpers/variables';
+
+.generateText {
+   
+
+    &__input {
+        font-family: 'Poppins', sans-serif;
+        font-size: $medium-font-size;
+        width: 100%;
+        height: 100%;
+        border-radius: $radius;
+        padding: 10px;
+        border: none;
+    }
+}

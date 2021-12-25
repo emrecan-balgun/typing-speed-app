@@ -1,2 +1,8 @@
 @import '../Helpers/mixins';
 @import '../Helpers/variables';
+
+.main {
+    border-radius: $radius;
+    background-color: rgb(255, 198, 198);
+    padding: 30px;
+}
