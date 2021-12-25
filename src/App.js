@@ -1,10 +1,11 @@
+import Main from './Container/Main';
 import './sass/main.scss'
 
 function App() {
   return (
-    <div className="main">
-      
-    </div>
+    <>
+      <Main />
+    </>
   );
 }
 
