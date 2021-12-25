@@ -1,2 +1,14 @@
 @import '../Helpers/mixins';
 @import '../Helpers/variables';
+
+.enterText {
+    @include flexbox();
+
+    &__input {
+        margin-top: 25px;
+        width: 60%;
+        border: none;
+        border-radius: $radius;
+        padding: 10px;
+    }
+}
