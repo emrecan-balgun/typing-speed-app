@@ -2,10 +2,7 @@
 @import '../Helpers/variables';
 
 .timer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flexbox();
     gap: 20px;
 
     &__time {
@@ -21,5 +18,95 @@
         border: none;
         padding: 10px;
         border-radius: $radius;
+    }
+
+    @media screen and (max-width: $smaller-screen) {
+        & {
+            gap: 0px;
+
+            &__time {
+                width: 50px;
+                font-size: $normal-font-size;
+            }
+
+            &__button {
+                font-size: $normal-font-size;
+            }
+        }
+    }
+
+    @media screen and (min-width: $smaller-screen2) {
+        & {
+            gap: 0px;
+
+            &__time {
+                width: 50px;
+                font-size: $medium-font-size;
+            }
+
+            &__button {
+                font-size: $medium-font-size;
+            }
+        }
+    }
+
+    @media screen and (min-width: $small-screen) {
+        & {
+            gap: 5px;
+
+            &__time {
+                width: 50px;
+                font-size: $mediumer-font-size;
+            }
+
+            &__button {
+                font-size: $mediumer-font-size;
+            }
+        }
+    }
+
+    @media screen and (min-width: $medium-screen) {
+        & {
+            gap: 5px;
+
+            &__time {
+                width: 50px;
+                font-size: $mediumer-font-size;
+            }
+
+            &__button {
+                font-size: $mediumer-font-size;
+            }
+        }
+    }
+
+    @media screen and (min-width: $large-screen) {
+        & {
+            gap: 10px;
+
+            &__time {
+                width: 50px;
+                font-size: $mediumer-font-size;
+            }
+
+            &__button {
+                font-size: $mediumer-font-size;
+            }
+        }
+    }
+
+    @media screen and (min-width: $extra-large-screen) {
+        & {
+            gap: 30px;
+
+            &__time {
+                width: 50px;
+                font-size: $bigger-font-size;
+            }
+
+            &__button {
+                font-size: $mediumer-font-size;
+            }
+        }
     }
 }
