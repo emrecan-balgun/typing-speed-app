@@ -1,18 +1,16 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { changeText, text } from '../app/typingSlice';
+
 
 function EnterText() {
-    const dispatch = useDispatch();
-    const userText = useSelector(text);
+    function handleKeyDown(event) {
+        console.log(event.key);
+    }
 
     return (
         <div className="enterText">
             <input
-                id="enterText"
+                type="text"
                 className="enterText__input"
-                value={userText}
-                onChange={(e) => dispatch(changeText(e.target.value)
-                )}
+                onKeyDown={handleKeyDown}
             />
         </div>
     )

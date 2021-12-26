@@ -19,8 +19,10 @@ function GenerateText() {
             <div className="generateText__text">
                 {words.map((word, i) => (
                     <>
-                        <span>
-                            {word}
+                        <span key={i}>
+                            {word.split("").map((char, idx) => (
+                                <span key={idx}>{char}</span>
+                            ))}
                         </span>
                         <span> </span>
                     </>
