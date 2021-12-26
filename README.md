@@ -3,6 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Photos
+![gif](public/project.jpg)
 ![v2](public/main.jpg)
 ![v2](public/main2.jpg)
 ![v2](public/mobile.jpg)
