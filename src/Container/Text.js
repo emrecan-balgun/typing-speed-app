@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import randomWords from 'random-words';
 
 const NUMB_OF_WORDS = 200;
-const SECONDS = 30;
+const SECONDS = 2;
 
 function Text() {
     // generateText
@@ -147,7 +147,7 @@ function Text() {
                 </div>
             </div>
         )}
-        {/* {status === "finished" && (
+        {status === "finished" && (
             <div className="modal">
                 <div className="modal__correct">Correct 
                     <span className="modal__correct__text">{correct}</span>
@@ -158,7 +158,7 @@ function Text() {
                     </span>
                 </div>
             </div>
-        )} */}
+        )}
         </>
     )
 }
