@@ -3,6 +3,7 @@
 
 .main {
     @include flexbox($direction: column);
+    margin-top: 20px;
     border-radius: $radius;
     background-color: rgb(255, 198, 198);
     padding: 20px;

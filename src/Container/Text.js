@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import randomWords from 'random-words';
 
-const NUMB_OF_WORDS = 100;
-const SECONDS = 999;
+const NUMB_OF_WORDS = 200;
+const SECONDS = 30;
 
 function Text() {
     // generateText
