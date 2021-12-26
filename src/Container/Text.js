@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import randomWords from 'random-words';
 
-const NUMB_OF_WORDS = 200;
-const SECONDS = 2;
+const NUMB_OF_WORDS = 100;
+const SECONDS = 999;
 
 function Text() {
     // generateText
@@ -127,7 +127,7 @@ function Text() {
         </div>
         )}
         
-        {status === "started" && (
+        {/* {status === "started" && (
             <div className="generateText">
                 <div className="generateText__text">
                     {words.map((word, i) => (
@@ -146,7 +146,7 @@ function Text() {
                     ))}
                 </div>
             </div>
-        )}
+        )} */}
         {status === "finished" && (
             <div className="modal">
                 <div className="modal__correct">Correct 

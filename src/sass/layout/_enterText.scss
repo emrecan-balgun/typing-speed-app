@@ -7,10 +7,29 @@
     &__input {
         font-family: 'Poppins', sans-serif;
         font-size: $medium-font-size;
-        margin-top: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         width: 100%;
         border: none;
         border-radius: $radius;
         padding: 10px;
+
+        @media screen and (max-width: $smaller-screen) {
+            & {
+                font-size: $small-font-size;
+            }
+        }
+    
+        @media screen and (min-width: $smaller-screen2) {
+            & {
+                font-size: $normal-font-size;
+            }
+        }
+    
+        @media screen and (min-width: $small-screen) {
+            & {
+                font-size: $medium-font-size;
+            }
+        }
     }
 }
