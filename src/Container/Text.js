@@ -127,7 +127,7 @@ function Text() {
         </div>
         )}
         
-        {/* {status === "started" && (
+        {status === "started" && (
             <div className="generateText">
                 <div className="generateText__text">
                     {words.map((word, i) => (
@@ -146,7 +146,7 @@ function Text() {
                     ))}
                 </div>
             </div>
-        )} */}
+        )}
         {status === "finished" && (
             <div className="modal">
                 <div className="modal__correct">Correct 

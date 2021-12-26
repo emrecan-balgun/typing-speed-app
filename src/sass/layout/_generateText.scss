@@ -2,13 +2,16 @@
 @import '../Helpers/variables';
 
 .generateText {
+    border-radius: $radius;
+    height: 300px;
+    padding: 10px;
+    border: none;
+    background-color: $white;
+
     &__text {
         font-family: 'Poppins', sans-serif;
         font-size: $medium-font-size;
-        border-radius: $radius;
-        padding: 10px;
-        border: none;
-        background-color: $white;
+
 
         &__success {
             background-color: green;
@@ -17,7 +20,77 @@
         &__danger {
             background-color: red;
         }
+    }
 
-        
+    @media screen and (max-width: $smaller-screen) {   
+        & {
+            &__text {
+                display: -webkit-box;
+                max-width: 250px;
+                -webkit-line-clamp: 10;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+
+    @media screen and (min-width: $smaller-screen2) {
+        & {
+            &__text {
+                display: -webkit-box;
+                max-width: 300px;
+                -webkit-line-clamp: 10;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+
+    @media screen and (min-width: $small-screen) {
+        & {
+            &__text {
+                display: -webkit-box;
+                max-width: 500px;
+                -webkit-line-clamp: 10;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+
+    @media screen and (min-width: $medium-screen) {
+        & {
+            &__text {
+                display: -webkit-box;
+                max-width: 700px;
+                -webkit-line-clamp: 10;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+
+    @media screen and (min-width: $large-screen) {
+        & {
+            &__text {
+                display: -webkit-box;
+                max-width: 900px;
+                -webkit-line-clamp: 10;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+
+    @media screen and (min-width: $extra-large-screen) {
+        & {
+            &__text {
+                display: -webkit-box;
+                max-width: 1200px;
+                -webkit-line-clamp: 10;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
     }
 }
