@@ -1,2 +1,31 @@
 @import '../Helpers/mixins';
 @import '../Helpers/variables';
+
+
+.modal {
+    @include flexbox();
+    gap: 50px;
+
+    &__correct {
+        @include flexbox($direction: column);
+        font-size: $bigger-font-size;
+        font-weight: $font-bold;
+
+        &__text {
+            font-size: $big-font-size;
+            font-weight: $font-light;
+        }
+        
+    }
+
+    &__accuracy {
+        @include flexbox($direction: column);
+        font-size: $bigger-font-size;
+        font-weight: $font-bold;
+
+        &__text {
+            font-size: $big-font-size;
+            font-weight: $font-light;
+        }
+    }
+}

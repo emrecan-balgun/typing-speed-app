@@ -6,4 +6,41 @@
     border-radius: $radius;
     background-color: rgb(255, 198, 198);
     padding: 20px;
+    box-shadow: $shadow;
+
+    @media screen and (max-width: $smaller-screen) {
+        & {
+            width: 260px;
+        }
+    }
+
+    @media screen and (min-width: $smaller-screen2) {
+        & {
+            width: 340px;
+        }
+    }
+
+    @media screen and (min-width: $small-screen) {
+        & {
+            width: 510px;
+        }
+    }
+
+    @media screen and (min-width: $medium-screen) {
+        & {
+            width: 710px;
+        }
+    }
+
+    @media screen and (min-width: $large-screen) {
+        & {
+            width: 930px;
+        }
+    }
+
+    @media screen and (min-width: $extra-large-screen) {
+        & {
+            width: 1150px;
+        }
+    }
 }
