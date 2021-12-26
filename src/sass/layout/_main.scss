@@ -2,6 +2,7 @@
 @import '../Helpers/variables';
 
 .main {
+    @include flexbox($direction: column);
     border-radius: $radius;
     background-color: rgb(255, 198, 198);
     padding: 30px;
